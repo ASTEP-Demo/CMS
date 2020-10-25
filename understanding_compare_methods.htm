@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 2019" />
+ <title>Understanding Compare Methods</title>
+<link rel="StyleSheet" href="Causeway_-_CHM.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/widgets.min.css">
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "0_5";
+</script>
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<h1>Appendix A: Understanding Compare Methods </h1>
+<p>The following compare methods or algorithms are used in the CATO GDPR 
+ Search facility to compare the search text with the matching phrase found.</p>
+<p class="bullet1"><span style="font-family:'Symbol'">&#183;</span><span style='word-spacing:normal; font:6.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-weight: bold;">Dice 
+ Coefficient </span>is<span style="font-weight: bold;"> </span>a statistic 
+ for comparing the similarity of two samples. It searches the database 
+ or files by comparing with the search keyword using this algorithm. For 
+ more information, refer to the <a href="https://en.wikipedia.org/wiki/SÃ¸rensenâDice_coefficient" 
+									 style="font-weight: normal;">Sorensen 
+ Dice Coefficient Wiki</a> page.</p>
+<p class="bullet1"><span style="font-family:'Symbol'">&#183;</span><span style='word-spacing:normal; font:6.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-weight: bold;">Levenshtein 
+ Distance</span> is the compare method where the distance between two words 
+ is the minimum number of single-character edits (insertions, deletions 
+ or substitutions) required to change one word into the other. &#160;For 
+ more information, refer to the <a href="https://en.wikipedia.org/wiki/Levenshtein_distance" 
+									 style="font-weight: normal;">Levenshtein 
+ Distance Wiki</a> page.</p>
+<p class="ListContinue" style="margin-left: 48px;">For example, if you 
+ search for &quot;Jonh&quot; instead of &quot;John&quot; with the <span 
+	 style="font-weight: bold;">Levenshtein Distance</span> compare method, 
+ you will get the search results with the entries having &quot;John&quot;. 
+ </p>
+<p class="bullet1"><span style="font-family:'Symbol'">&#183;</span><span style='word-spacing:normal; font:6.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-weight: bold;">Longest 
+ common subsequence (LCS)</span> The longest common subsequence (LCS) problem 
+ is the problem of finding the longest subsequence common to all sequences 
+ in a set of sequences (often just two sequences). For more information, 
+ refer to the <a href="https://en.wikipedia.org/wiki/Longest_common_subsequence_problem" 
+				 style="font-weight: normal;">Longest common subsequence 
+ problem Wiki</a> page.</p>
+<p class="bullet1"><span style="font-family:'Symbol'">&#183;</span><span style='word-spacing:normal; font:6.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-weight: bold;">Fuzzy 
+ Search</span> is for full-text searches that allows you to find search 
+ terms despite typos, Optical Character Recognition (OCR) errors or small 
+ mistakes in your search term. For more information, refer to the <a href="https://www.laserfiche.com/ecmblog/tech-tip-search-performance-using-fuzzy-search/" 
+	 style="font-weight: normal;">Laserfiche Blog</a> page.</p>
+<p class="bullet1"><span style="font-family:'Symbol'">&#183;</span><span style='word-spacing:normal; font:6.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-weight: bold;">Double 
+ Metaphone</span> looks for variations and inconsistencies in English spelling 
+ and pronunciation to produce a more accurate encoding, which does a better 
+ job of matching words and names which sound similar. &#160;For more information, 
+ refer to the <a href="https://en.wikipedia.org/wiki/Metaphone" style="font-weight: normal;">Double 
+ Metaphone Wiki</a> page.</p>
+<p class="ListContinue" style="margin-left: 48px;">For example, if you 
+ search for &quot;Joan&quot; instead of &quot;John&quot; (as both sounds 
+ similar) with the <span style="font-weight: bold;">Double Metaphone</span> 
+ compare method, you will get the search results with the entries having 
+ &quot;John&quot;.</p>
+<p class="ListContinue">&#160;</p>
+<div style="width: 100%; position: relative;" id="footer">
+	<p>&#160;</p>
+</div>
+</body>
+</html>
