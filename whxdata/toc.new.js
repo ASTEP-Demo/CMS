@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"Introduction","url":"project_executive_introduction.htm"},{"type":"item","name":"Opening the CATO GDPR Search Utility","url":"logging_on_sso.htm"},{"type":"item","name":"Searching in CATO Projects","url":"searching_in_cato_projects.htm"},{"type":"item","name":"Including the CADMeasure Session Files for Search","url":"searching_in_cadmeasure_session_files.htm"},{"type":"item","name":"Appendix A: Understanding Compare Methods","url":"understanding_compare_methods.htm"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();
